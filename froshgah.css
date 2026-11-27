@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 70px;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.login {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.template-page {
+    min-height: 600px;
+    padding: 70px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.template-image {
+    height: 400px;
+    background: #ddd;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+}
+
+.template-info h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.template-info p {
+    color: #666;
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.template-info h2 {
+    margin-bottom: 25px;
+}
+
+.template-info ul {
+    list-style: none;
+    line-height: 2.5;
+    margin-bottom: 25px;
+}
+
+.tag {
+    background: #111;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+.buy-btn {
+    width: 220px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 800px) {
+
+    .template-page {
+        grid-template-columns: 1fr;
+    }
+
+    .template-info h1 {
+        font-size: 30px;
+    }
+
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 34px;
+}
